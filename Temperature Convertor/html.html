@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temprature - Converter</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<script src="app.js"></script></head>
+
+<body>
+
+	<div class="container">
+	<h1>Temperature Converter</h1>
+	<form oninput="result.value=onInput(degree.value, fromScale.value, toScale.value)">
+		<h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Convert from</h4>
+
+		<input type="number" id="degree" placeholder="&nbsp;Enter Temperature" onkeypress="onlyNumbers(event)" value="">
+
+		<select id="fromScale" class="select">
+			<option value="Celsius">°C</option>
+			<option value="Fahrenheit">°F</option>
+			<option value="Kelvin">K</option>
+		</select>
+
+		<h4>to</h4>
+
+		<select id="toScale" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+			<option value="Celsius" style= "font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;&nbsp;Celsius (°C)</option>
+			<option value="Fahrenheit" style="font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;&nbsp;Fahrenheit (°F)</option>
+			<option value="Kelvin" style="font-family: Georgia, 'Times New Roman', Times, serif;">&nbsp;&nbsp;Kelvin (K)</option>
+		</select>
+<br>
+	     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &#8681;</h4>
+<br>
+		<output name="result" for="degree fromScale toScale"></output>
+		
+	</form>
+</div>
+
+</body>
+
+</html>
