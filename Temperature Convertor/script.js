@@ -13,13 +13,13 @@ const onInput = (degree, fromScale, toScale) => {
     
     switch (fromScale + " | " + toScale) {
         case "Celsius | Fahrenheit":
-            return Math.round(c2f(+degree) * 100) / 100 + " Â°F";
+            return Math.round(c2f(+degree) * 100) / 100 + " °F";
             break; 
         case "Fahrenheit | Celsius":
-            return Math.round(f2c(+degree) * 100) / 100 + " Â°C";
+            return Math.round(f2c(+degree) * 100) / 100 + " °C";
             break;
         case "Kelvin | Celsius":
-            return Math.round(k2c(+degree) * 100) / 100 + " Â°C";
+            return Math.round(k2c(+degree) * 100) / 100 + " °C";
             break;
         case "Celsius | Kelvin":
             return Math.round(c2k(+degree) * 100) / 100 + " K";
@@ -28,13 +28,13 @@ const onInput = (degree, fromScale, toScale) => {
             return Math.round(f2k(+degree) * 100) / 100 + " K";
             break;
         case "Kelvin | Fahrenheit":
-            return Math.round(k2f(+degree) * 100) / 100 + " Â°F";
+            return Math.round(k2f(+degree) * 100) / 100 + " °F";
             break;
         case "Celsius | Celsius":
-            return Math.round(+degree * 100) / 100 + " Â°C";
+            return Math.round(+degree * 100) / 100 + " °C";
             break;
         case "Fahrenheit | Fahrenheit":
-            return Math.round(+degree * 100) / 100 + " Â°F";
+            return Math.round(+degree * 100) / 100 + " °F";
             break;
         case "Kelvin | Kelvin":
             return Math.round(+degree * 100) / 100 + " K";
